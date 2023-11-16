@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script>
+  <script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>VideoRecorder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--<div id="tsparticles">
+    <canvas class="tsparticles-canvas-el" width="2846" height="1538" style="width: 100%; height: 100%; position: fixed; z-index: -1; top: 0px; left: 0px; background-color:#1b0c43!important; pointer-events: none;"></canvas>
+</div>-->
+    <h1 id="title">Video Recorder</h1>
+
+    <div id="instruction">
+      <h3 id="title-instruction">Instructions</h3>
+      <div id="more-instruction">
+        <ol>
+          <li>Enter the information in the box below.</li>
+          <li>
+            Click <b>"Start Camera"</b> and grant the required permissions.
+          </li>
+          <li>Frame your entire face.</li>
+          <li>
+            Click <b>"Start Recording"</b>, say the phrase, and wait for the
+            <b>countdown</b> to finish (each video will last 3 seconds).
+          </li>
+          <li>
+            If you pronounced correctly, click <b>"Download"</b>; otherwise,
+            click <b>"Delete"</b> and repeat from step 4.
+          </li>
+          <li>
+            Finally, click <b>"Done"</b> to proceed to the next phrase. Repeat
+            from step 4.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="form">
+      <label for="name-lastname">First and Last Name</label>
+      <input
+        type="text"
+        id="name-lastname"
+        name="name-lastname"
+        placeholder="bs"
+      />
+    </div>
+    <!--<p id="timer"></p>
+<p id="demo"></p>-->
+
+    <div id="slideshow-container">
+      <h2 id="finish">Finish!</h2>
+      <div id="navigation-carousel">
+        <a id="prev" onclick="plusSlides(-1, 0, 0)">&#10094;</a>
+        <button id="done" onclick="done()">Done</button>
+        <a id="next" onclick="plusSlides(1, 0, 0)">&#10095;</a>
+      </div>
+    </div>
+
+    <button id="start-camera">Start Camera</button>
+
+    <div id="recording">
+      <div class="pulsating-circle"></div>
+      <h5><p id="timer">00:03</p></h5>
+    </div>
+
+    <!--<video id="video" width="520" height="440" autoplay=""></video>-->
+    <video id="video" autoplay="" onloadstart="this.volume=0"></video>
+
+    <button id="start-record">Start Recording</button>
+    <!--<button id="stop-record">Stop Recording</button>-->
+
+    <div class="send-video">
+      <a id="download-video"><button>Download</button></a>
+      <button id="delete-video">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@1.22.5/tsparticles.preset.links.bundle.min.js"
+      integrity="sha256-pQsjEmQMchdzQUO6nacx+t2omISa7WUWtnpc3fnga5E="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
