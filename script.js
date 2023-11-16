@@ -52,8 +52,8 @@ let video_local = null;
 camera_button.addEventListener('click', async () => {
   const constraints = {
     video: {
-      width: 360,
-      height: 288,
+      width: 1280,
+      height: 720,
     },
     audio: true,
   };
