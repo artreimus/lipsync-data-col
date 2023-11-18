@@ -52,8 +52,8 @@ let video_local = null;
 camera_button.addEventListener('click', async () => {
   const constraints = {
     video: {
-      width: 1280,
-      height: 720,
+      width: 1920,
+      height: 1080,
     },
     audio: true,
   };
@@ -193,6 +193,7 @@ let phrases = [
   'E',
   'I',
   'O',
+  'U',
   'BA',
   'BE',
   'BI',
@@ -288,6 +289,11 @@ let phrases = [
   'IG',
   'OG',
   'UG',
+  'AH',
+  'EH',
+  'IH',
+  'OH',
+  'UH',
   'AK',
   'EK',
   'IK',
