@@ -113,11 +113,8 @@ start_button.addEventListener('click', function () {
     delete_button.style.display = 'block';
   });
 
-  setTimeout(() => {
-    console.log('World!');
-  }, 1000);
-
   media_recorder.start(1000);
+
   setTimeout(() => {
     media_recorder.stop();
   }, 4000);
